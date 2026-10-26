@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Expense Tracker</h1>
+
+        <div class="section">
+            <h2>Add Expense</h2>
+            <input id="amount" type="number" placeholder="Amount">
+            <input id="category" type="text" placeholder="Category">
+            <button onclick="addExpense()">Add</button>
+        </div>
+
+        <div class="section">
+            <h2>Set Budget</h2>
+            <input id="budget" type="number" placeholder="Monthly Budget">
+            <button onclick="setBudget()">Set</button>
+        </div>
+
+        <div class="section">
+            <h2>Expenses</h2>
+            <ul id="expenseList"></ul>
+        </div>
+
+        <div class="section">
+            <h2>Summary</h2>
+            <p id="total"></p>
+            <p id="budgetDisplay"></p>
+            <p id="alert"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
